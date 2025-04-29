@@ -1,5 +1,5 @@
 name: reusable_list_view
-description: "A new Flutter package project."
+description: "A collection of reusable, customizable list and scroll widgets for Flutter with built-in search, grid, and scroll visibility features."
 version: 0.0.1
 homepage: https://github.com/GenieCoderSrc/reusable_list_view
 repository: https://github.com/GenieCoderSrc/reusable_list_view
