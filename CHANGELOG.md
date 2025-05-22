@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.2
+- Update Export File.
+- 
 ## 0.0.1
 - Initial release of `reusable_list_view` package.
 - Includes reusable widgets for:
