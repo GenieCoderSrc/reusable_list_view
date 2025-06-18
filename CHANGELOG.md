@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.3
+-  Renamed AppListViewBuilderWithSearch as AppSearchableListViewBuilder.
+
 ## 0.0.2
 - Update Export File.
 - 

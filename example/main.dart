@@ -35,8 +35,9 @@ class _ExampleScreenState extends State<ExampleScreen> {
 
   void _filterList(String query) {
     setState(() {
-      _filteredItems = _items
-          .filter([(item) => item], query); // Using ListFilterExtension
+      _filteredItems = _items.filter([
+        (item) => item,
+      ], query); // Using ListFilterExtension
     });
   }
 
@@ -44,11 +45,11 @@ class _ExampleScreenState extends State<ExampleScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('List View With Search')),
-      body: AppListViewBuilderWithSearch<String>(
+      body: AppSearchableListViewBuilder<String>(
         listData: _filteredItems,
         searchController: _searchController,
-        onChanged: _filterList,
-        child: (item) => ListTile(title: Text(item)),
+        onSearchChanged: _filterList,
+        childBuilder: (item) => ListTile(title: Text(item)),
       ),
     );
   }
