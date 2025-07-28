@@ -13,10 +13,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   bloc: ^9.0.0
   flutter_bloc: ^9.0.0
   equatable: ^2.0.7
-  text_field_builder: ^0.0.1
+
+  text_field_builder:
+    path: ../text_field_builder
   builder_state: ^0.0.2
   state_msg_builder: ^0.0.2+1
 
