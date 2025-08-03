@@ -15,11 +15,12 @@ class AppSingleChildScrollViewWithScrollController<T>
     bool reverse = false,
     Axis scrollDirection = Axis.vertical,
   }) : super(
-          listBuilder: () => SingleChildScrollView(
-            controller: scrollController,
-            scrollDirection: scrollDirection,
-            reverse: reverse,
-            child: child,
-          ),
-        );
+         listBuilder:
+             () => SingleChildScrollView(
+               controller: scrollController,
+               scrollDirection: scrollDirection,
+               reverse: reverse,
+               child: child,
+             ),
+       );
 }

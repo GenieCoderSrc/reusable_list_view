@@ -18,12 +18,13 @@ class AppListViewBuilder<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        reverse: reverse,
-        controller: scrollController,
-        itemCount: listData?.length ?? 0,
-        itemBuilder: (BuildContext context, int index) {
-          final T itemData = listData![index];
-          return child(itemData);
-        });
+      reverse: reverse,
+      controller: scrollController,
+      itemCount: listData?.length ?? 0,
+      itemBuilder: (BuildContext context, int index) {
+        final T itemData = listData![index];
+        return child(itemData);
+      },
+    );
   }
 }

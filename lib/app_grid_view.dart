@@ -35,18 +35,21 @@ class AppGridView<T> extends StatelessWidget {
     final double childAspectRatio = (itemWidth / itemHeight);
 
     return GridView.builder(
-        shrinkWrap: shrinkWrap,
-        physics: physics,
-        padding: EdgeInsets.symmetric(
-            vertical: verticalPadding, horizontal: horizontalPadding),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCount,
-          childAspectRatio: childAspectRatio,
-        ),
-        itemCount: listData?.length ?? 0,
-        itemBuilder: (_, int index) {
-          final T itemData = listData![index];
-          return child!(itemData) as Widget;
-        });
+      shrinkWrap: shrinkWrap,
+      physics: physics,
+      padding: EdgeInsets.symmetric(
+        vertical: verticalPadding,
+        horizontal: horizontalPadding,
+      ),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: crossAxisCount,
+        childAspectRatio: childAspectRatio,
+      ),
+      itemCount: listData?.length ?? 0,
+      itemBuilder: (_, int index) {
+        final T itemData = listData![index];
+        return child!(itemData) as Widget;
+      },
+    );
   }
 }

@@ -1,0 +1,14 @@
+# melos_managed_dependency_overrides: app_style,builder_state,loading_builder,reusable_button,state_msg_builder,text_field_builder
+dependency_overrides:
+  app_style:
+    path: ../app_style
+  builder_state:
+    path: ../builder_state
+  loading_builder:
+    path: ../loading_builder
+  reusable_button:
+    path: ../reusable_button
+  state_msg_builder:
+    path: ../state_msg_builder
+  text_field_builder:
+    path: ../text_field_builder
