@@ -19,12 +19,11 @@ class AppListViewBuilderWithScrollController<T>
     final Axis scrollDirection = Axis.vertical,
   }) : super(
          scrollController: controller,
-         listBuilder:
-             () => AppListViewBuilder<T>(
-               scrollController: controller,
-               child: (T item) => child(item),
-               listData: listData,
-               reverse: reverse,
-             ),
+         listBuilder: () => AppListViewBuilder<T>(
+           scrollController: controller,
+           child: (T item) => child(item),
+           listData: listData,
+           reverse: reverse,
+         ),
        );
 }
