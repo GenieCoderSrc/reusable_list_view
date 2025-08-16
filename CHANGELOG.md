@@ -2,13 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.4
+
+### Aug 16, 2025
+
+### ✨ Updated
+
+- Updated `text_field_builder` package
+
 ## 0.0.3
--  Renamed AppListViewBuilderWithSearch as AppSearchableListViewBuilder.
+
+- Renamed AppListViewBuilderWithSearch as AppSearchableListViewBuilder.
 
 ## 0.0.2
+
 - Update Export File.
-- 
+
 ## 0.0.1
+
 - Initial release of `reusable_list_view` package.
 - Includes reusable widgets for:
     - ListView (basic, with scroll controller, with search)
