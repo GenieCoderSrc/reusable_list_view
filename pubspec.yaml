@@ -19,9 +19,9 @@ dependencies:
   text_field_builder: ^0.0.5
   state_msg_builder: ^0.0.3
 
-  bloc: ^9.0.0
+  bloc: ^9.2.1
   flutter_bloc: ^9.1.1
-  equatable: ^2.0.7
+  equatable: ^2.0.8
 
 
 
