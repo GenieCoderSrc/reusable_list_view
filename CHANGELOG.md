@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.6
+
+### Sep 26, 2026
+
+### ✨ Updated
+
+- Updated `text_field_builder` to 0.0.7
+
 ## 0.0.5
 
 ### Aug 22, 2025
