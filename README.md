@@ -15,6 +15,8 @@
 Add this to your `pubspec.yaml`:
 
 ```yaml
+resolution: workspace
+
 dependencies:
   reusable_list_view: <latest_version>
 ```
