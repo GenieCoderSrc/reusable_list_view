@@ -29,15 +29,13 @@ class BaseScrollControllerWidget<T> extends StatefulWidget {
 }
 
 class _BaseScrollControllerWidgetState<T>
-    extends State<BaseScrollControllerWidget<T>>
-    with TickerProviderStateMixin {
+    extends State<BaseScrollControllerWidget<T>> with TickerProviderStateMixin {
   late ScrollController _scrollController;
 
   @override
   void initState() {
     super.initState();
-    _scrollController =
-        widget.scrollController ??
+    _scrollController = widget.scrollController ??
         context.read<DialVisibleCubit>().state.scrollController;
     _initializeScrollController();
   }
@@ -66,10 +64,9 @@ class _BaseScrollControllerWidgetState<T>
 
     // set some widget visibility e.g, floating action button on scroll
     context.read<DialVisibleCubit>().setDialVisible(
-      isVisible:
-          _scrollController.position.userScrollDirection ==
-          ScrollDirection.forward,
-    );
+          isVisible: _scrollController.position.userScrollDirection ==
+              ScrollDirection.forward,
+        );
   }
 
   @override
