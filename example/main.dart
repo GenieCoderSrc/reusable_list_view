@@ -49,7 +49,9 @@ class _ExampleScreenState extends State<ExampleScreen> {
         listData: _filteredItems,
         searchController: _searchController,
         onSearchChanged: _filterList,
-        childBuilder: (item) => ListTile(title: Text(item)),
+        childBuilder: (item, index) => ListTile(
+          title: Text(item),
+        ),
       ),
     );
   }

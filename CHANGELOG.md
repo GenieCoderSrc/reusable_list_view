@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.7
+
+### Nov 4, 2026
+
+### ✨ Updated
+
+- Updated AppListViewBuilderWithScrollController.
+- Updated AppListViewBuilderWithDivider.
+- Updated AppGridView.
+
 ## 0.0.6
 
 ### Sep 30, 2026

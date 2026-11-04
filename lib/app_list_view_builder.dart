@@ -23,7 +23,7 @@ class AppListViewBuilder<T> extends StatelessWidget {
       itemCount: listData?.length ?? 0,
       itemBuilder: (BuildContext context, int index) {
         final T itemData = listData![index];
-        return child(itemData);
+        return child(itemData, index); // 🎯 Pass index here!
       },
     );
   }

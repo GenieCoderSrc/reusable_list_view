@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reusable_list_view/type_dev/list_type_dev.dart';
 
 class AppListViewBuilderWithDivider<T> extends StatelessWidget {
   const AppListViewBuilderWithDivider({
@@ -12,7 +13,8 @@ class AppListViewBuilderWithDivider<T> extends StatelessWidget {
   });
 
   final List<T>? listData;
-  final Function child;
+  final ChildBuilder<T>
+      child; // 🎯 Upgraded from dynamic Function to ChildBuilder<T> for strict typing (item, index)
   final ScrollController? scrollController;
   final double? dividerThickness;
   final Color? dividerColor;
@@ -25,7 +27,7 @@ class AppListViewBuilderWithDivider<T> extends StatelessWidget {
       itemCount: listData?.length ?? 0,
       itemBuilder: (BuildContext context, int index) {
         final T itemData = listData![index];
-        return child(itemData) as Widget;
+        return child(itemData, index); // 🎯 Pass both itemData and index
       },
       separatorBuilder: (BuildContext context, int index) {
         return separatorWidget ??

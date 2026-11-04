@@ -21,7 +21,8 @@ class AppListViewBuilderWithScrollController<T>
           scrollController: controller,
           listBuilder: () => AppListViewBuilder<T>(
             scrollController: controller,
-            child: (T item) => child(item),
+            child: (T item, int index) => child(item,
+                index), // 🎯 Forward item and index down to underlying builder
             listData: listData,
             reverse: reverse,
           ),

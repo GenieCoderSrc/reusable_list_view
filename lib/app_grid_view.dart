@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reusable_list_view/type_dev/list_type_dev.dart';
 
 class AppGridView<T> extends StatelessWidget {
   const AppGridView({
@@ -16,7 +17,8 @@ class AppGridView<T> extends StatelessWidget {
   });
 
   final List<T>? listData;
-  final Function? child;
+  final ChildBuilder<T>?
+      child; // 🎯 Upgraded to ChildBuilder<T> for index support
   final Color? backgroundColor;
   final int crossAxisCount;
   final double childHeight;
@@ -48,7 +50,8 @@ class AppGridView<T> extends StatelessWidget {
       itemCount: listData?.length ?? 0,
       itemBuilder: (_, int index) {
         final T itemData = listData![index];
-        return child!(itemData) as Widget;
+        return child!(itemData, index)
+            as Widget; // 🎯 Pass itemData and index to child builder
       },
     );
   }
