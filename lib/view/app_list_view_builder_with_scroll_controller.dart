@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:reusable_list_view/base_scroll_controller.dart';
 import 'package:reusable_list_view/type_dev/list_type_dev.dart';
-
-import 'app_list_view_builder.dart';
-import 'base_scroll_controller.dart';
+import 'package:reusable_list_view/view/app_list_view_builder.dart';
 
 class AppListViewBuilderWithScrollController<T>
     extends BaseScrollControllerWidget<T> {
@@ -21,8 +20,7 @@ class AppListViewBuilderWithScrollController<T>
           scrollController: controller,
           listBuilder: () => AppListViewBuilder<T>(
             scrollController: controller,
-            child: (T item, int index) => child(item,
-                index), // 🎯 Forward item and index down to underlying builder
+            child: (T item, int index) => child(item, index), //
             listData: listData,
             reverse: reverse,
           ),

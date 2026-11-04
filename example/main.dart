@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:reusable_list_view/reusable_list_view.dart';
 
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {

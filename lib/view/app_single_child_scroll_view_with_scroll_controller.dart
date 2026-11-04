@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'base_scroll_controller.dart';
+import '../base_scroll_controller.dart';
 
 class AppSingleChildScrollViewWithScrollController<T>
     extends BaseScrollControllerWidget<T> {
